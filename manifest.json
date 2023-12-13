@@ -1,15 +1,16 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Apps Shortcut",
-  "version": "0.1",
+  "version": "0.2",
   "description": "Keyboard Shortcut to Chrome Apps",
   "background": {
-    "scripts": ["background.js"],
-    "persistent": false
+    "service_worker": "background.js"
   },
   "commands": {
     "new-apps-tab": {
-      "suggested_key": { "default": "Ctrl+Shift+A" },
+      "suggested_key": {
+        "default": "Alt+Shift+A"
+      },
       "description": "Open Chrome Apps in a new Tab"
     }
   }
